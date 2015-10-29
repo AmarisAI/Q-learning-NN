@@ -5,31 +5,6 @@ Created on Sat Aug 22 22:33:58 2015
 @author: ka
 """
 
-#prefix = "testing" if testing else "training"
-
-#TODO:? dabar as pats idedu state current balance, bet gal reiktu padaryti vidine laikina atminti kad jis pats galvotu
-#TODO:? speti ne vien q_val, bet ir busimas states, kad butu galima planuoti. Turi tureti visas galimybes kurti ir suvokti ka kuria kompo programas
-#TODO:? tam reikia ir temporal memory
-#TODO:? CNN ir 3time scales 
-
-#TODO:? RNN+memory, atsakyti klausimams apie teksta, sitas stateofart: http://arxiv.org/pdf/1502.05698.pdf,  http://arxiv.org/abs/1410.5401, http://arxiv.org/pdf/1506.03340v1.pdf https://www.google.com/search?client=ubuntu&channel=fs&q=memory+networks+for+question+answering&ie=utf-8&oe=utf-8
-# kaip ir sake, sunku kad jis zinotu ne vien kas pasakyta, bet common knowledge
-
-#+++  ideti state current state - kiek yra skirtumas nuo pirkimo
-#+++  test_set prasideda nuo nulio ir tesiaisi visas, game_over ivyksta tik kai 
-#+++  test feature atskirai
-#+++  num_steps >= len(test_data)
-#+++  visas vieno testo vertes(history) saugo isorine funcija
-#+++  ir sita loga galima uzplotint po kiekvieno test
-#+++  ideti tp ir sl
-#+++  padaryti kaip jforex
-#+++  padaryti, kad kai epsilion < 0.9, tu 0 -> 3 ir 1or2 -> 1 or 2, deti minimaliai: manual visalaik
-#+++  Normalise real-valued data. Subtract the mean and divide by standard deviation.
-#kazkodel labai greitis priklauso nuo kiek data points is pradziu uzgeneruou
-#jis nesupranta tp ir sl, nes buna tas pats state ir uz action 0, duoda 1 arba 0. Gal del to ir duoda DeepMind po 3 screenus, kad kryti nustatytu
-#tiesiog daro 2->3 arba 1->3, nes nezino kada nupirko, ir su sltp
-
-
 import launcher
 
 class Defaults:
